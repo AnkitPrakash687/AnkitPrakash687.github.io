@@ -9,15 +9,32 @@ td {
 	cursor: pointer;
 }
 
+table{
+  visibility: hidden;
+}
+
+#start{
+  visibility: visible;
+  width: 200px;
+  top: 10%;
+  position: absolute;
+  left: 55%;
+  margin-left: -100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#start-again{
+  visibility: hidden;
+  margin-left: 25%;
+  
+ 
+}
+
 td:hover {
   background-color: #ffe60065;
   transition: 500ms;
   padding-bottom:0.2em;
-}
-table {	
-	left: 50%;
-
-	top: 50px;
 }
 
 table tr:first-child td {
@@ -39,10 +56,10 @@ table tr td:last-child {
 .endgame {
   display: none;
   width: 200px;
-  top: 50%;
+  top: 30%;
   background-color: rgba(205, 134, 63, 0.945);
   position: absolute;
-  left: 15%;
+  left: 45%;
   margin-left: -100px;
   padding-top: 50px;
   padding-bottom: 50px;

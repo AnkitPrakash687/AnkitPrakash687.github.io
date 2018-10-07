@@ -14,12 +14,6 @@
 	padding-top: 4em;
 }
 
-.grid-container {
-	display: inline-grid;
-	grid-template-columns:30% 10% 50%;
-  }
   .grid-item {
-/*	border: 1px solid rgba(0, 0, 0, 0.8);*/
-	padding: 20px;
-	justify-content: center;
+	margin-left: 2em;
   }

@@ -13,9 +13,12 @@ const winCombos = [
 ]
 
 const cells = document.querySelectorAll('.cell');
-startGame();
+
 
 function startGame() {
+	document.querySelector("#start-again").style.visibility = "hidden";
+	document.querySelector("table").style.visibility = "visible";
+	document.querySelector("#start").style.visibility = "hidden";
 	document.querySelector(".endgame").style.display = "none";
 	originalBoard = Array.from(Array(9).keys());
 	for (var i = 0; i < cells.length; i++) {
@@ -69,6 +72,7 @@ function gameOver(gameWon) {
 
 function declareWinner(who) {
 	document.querySelector(".endgame").style.display = "block";
+	document.querySelector("#start-again").style.visibility = "visible";
 	document.querySelector(".endgame .text").innerText = who;
 }
 
